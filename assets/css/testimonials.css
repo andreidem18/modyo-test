@@ -1,0 +1,47 @@
+.slide-row{
+    display: flex;
+    transition: .5s;
+}
+.slide-col{
+    width: 100%;
+}
+.user-img img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.user-text{
+    margin: 25px 0;
+}
+.user-text q{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.indicator{
+    z-index: 10;
+}
+.user-img, .indicator, .user-text q, .user-text h5{
+    text-align: center;
+}
+.indicator .btn{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: var(--primary-green);
+    transition: .5s;
+}
+.indicator .btn:hover{
+    background: #08a18d;
+}
+.indicator .btn.active{
+    width: 45px;
+}
+.testimonial{
+    overflow: hidden;
+    max-width: 550px;
+    margin: 0 auto;
+}

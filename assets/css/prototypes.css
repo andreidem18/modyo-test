@@ -1,0 +1,60 @@
+.prototypes .col-title{
+    display: none;
+    margin-bottom: 0;
+}
+
+.prototypes ul{
+    margin: 50px 0;
+}
+
+.prototypes ul li{
+    margin: 15px 0;
+}
+.prototypes ul li .green{
+    color: #067406;
+}
+
+.prototypes .founder-card{
+    padding: 15px;
+    text-align: left;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.4);
+}
+.prototypes .founder-card .flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.prototypes .founder-card h6, .prototypes .founder-card p{
+    font-size: 1rem;
+    text-align: left
+}
+.prototypes .founder-card q{
+    font-size: .9rem;
+}
+.prototypes .founder-card [class *= col-]{
+    padding: 8px;
+}
+.prototypes .col-9{
+    width: 75%;
+}
+.prototypes .col-3{
+    width: 25%;
+}
+.prototypes .founder-card img{
+    border-radius: 50%;
+}
+
+@media(min-width: 992px){
+    .prototypes .flex{
+        display: flex;
+        align-items: center;
+    }
+    .prototypes .col-title{
+        display: block;
+        text-align: left;
+        padding: 10px 0;
+    }
+    .prototypes .non-col-title{
+        display: none;
+    }
+}

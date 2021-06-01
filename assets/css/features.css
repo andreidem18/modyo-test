@@ -1,0 +1,30 @@
+.features .card{
+    background: #fff;
+    padding: 30px;
+    position: relative;
+    transition: .5s;
+}
+.features .card:hover{
+    transform: scale(1.04);
+}
+.features .main-button{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.features h5{
+    font-size: 1rem;
+    margin-top: 20px;
+}
+.features p{
+    margin: 10px 0;
+}
+
+@media(min-width: 768px){
+    .features .flex{
+        display: flex;
+    }
+}

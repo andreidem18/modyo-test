@@ -1,0 +1,77 @@
+nav{
+    padding: 10px 0;
+    height: 57px;
+    box-shadow: 0 0 8px rgba(0,0,0,.3);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #fff;
+    z-index: 10;
+}
+nav button{
+    border: 0;
+    background: transparent;
+    width: 40px;
+    font-size: 1.3rem;
+}
+
+nav .flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    position: fixed;
+    background: rgba(255,255,255,.55);
+    box-shadow: 0 100px 32px 0 rgba(31, 38, 135, .37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    top: 57px;
+    bottom: 0;
+    right: 0;
+    padding: 50px 20px;
+    width: 240px;
+    transition: .5s ease-in-out;
+    z-index: 1000;
+}
+nav ul.hidden{
+    right: -272px;
+}
+nav ul li{
+    padding: 20px;
+}
+nav ul li a{
+    color: var(--primary-dark);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: .2s;
+}
+nav ul li a:hover{
+    color: var(--primary-green);
+}
+
+@media(min-width: 769px){
+    nav button{
+        display: none;
+    }
+    nav .brand-name{
+        display: none;
+    }
+    nav .flex{
+        justify-content: center;
+        height: 100%;
+    }
+    nav ul{
+        all: unset;
+        display: flex;
+        align-items: center;
+    }
+    nav ul li{
+        padding: 0 10px;
+    }
+    nav ul li a{
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}
